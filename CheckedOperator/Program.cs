@@ -5,7 +5,7 @@
     int minValue = maxValue + 1; // OUTPUT: int.MinValue
     Console.WriteLine(minValue);
 
-    var b = checked(maxValue + 1); // OUTPUT: System.OverflowException: Arithmetic operation resulted in an overflow.
+    var checkOverflow = checked(maxValue + 1); // OUTPUT: System.OverflowException: Arithmetic operation resulted in an overflow.
 }
 catch (Exception)
 {
